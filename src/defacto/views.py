@@ -1,9 +1,13 @@
 from django.shortcuts import render
+from .lang import lang
 
 
 def home(request):
     """ Home page handler """
-    return render(request, 'core/index.html')
+
+    return render(request, 'core/index.html', {
+        'lang' : lang['mon']
+    })
 
 
 def about(request):

@@ -1,5 +1,19 @@
+{% load static %}
 {% include 'core/partials/header.html' %}
 {% include 'core/partials/components/navbar.html' %}
+<div class="container">
+    <div class="jumbotron" style="height:500px;border-radius:0;background-color:black; position:relative;">
+        <p style="width:65%">Дамбадаржаагийн Жаргалсайхан нь "The Defacto Gazette" болон  “The Defacto Institute”-ийн үүсгэн байгуулагч, 
+            гүйцэтгэх захирал, эдийн засаг, улс төрийн бодлогын шүүмж-нийтлэл бичдэг ба "DeFacto ярилцлага"хөтлөгч, "Дефакто Тойм"  
+            долоо хоногийн Монгол улсын улс төр, эдийн засаг, нийгмийн амьдралын хамгийн 
+            чухал үйл явдалд дүгнэлт өгдөг нэвтрүүлэг хөтөлдөг, эдийн засагч, хараат бус нийтлэлч юм.</p>
+        <div class="image-wrapper" style="position:absolute;top:0;right:0;    height: 100%;">
+
+            <img style="height:100%;" src="{% static 'core/img/core-img/jargalsaikhan.jpg' %}" alt="">
+        </div>
+    </div>
+</div>
+
 {% include 'core/partials/components/hero.html' %}
 
 {% block content %}{% endblock %}
